@@ -1,0 +1,18 @@
+# Settings for sidebar patch
+# http://www.lunar-linux.org/index.php?option=com_content&task=view&id=44
+
+set sidebar_width=25
+set sidebar_visible=yes
+set sidebar_delim = "|"
+set sidebar_sort=no
+#set sidebar_folderindent=yes
+
+bind index,pager p sidebar-prev
+bind index,pager n sidebar-next
+bind index,pager o sidebar-open
+
+color sidebar_new green default
+
+# b toggles sidebar visibility
+macro index b '<enter-command>toggle sidebar_visible<enter>'
+macro pager b '<enter-command>toggle sidebar_visible<enter>'

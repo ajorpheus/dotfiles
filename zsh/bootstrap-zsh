@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+vendor_dir=~/.zsh/vendor
+
+repos=(
+https://github.com/zsh-users/zsh-completions.git
+https://github.com/zsh-users/zsh-history-substring-search.git
+https://github.com/zsh-users/zsh-syntax-highlighting.git
+https://github.com/rupa/z.git
+)
+
+echo "Cleaning out vendor dir"
+rm -rf ${vendor_dir}
+mkdir -p ${vendor_dir}
+cd ${vendor_dir}
+
+for repo ($repos) git clone $repo

@@ -1,0 +1,202 @@
+! ----------------------------------------------------------------------------
+! File:     ~/.Xdefaults
+! Author:   Greg Fitzgerald <greg@gregf.org>
+! Modified: Tue 30 Jun 2009 12:13:16 AM EDT
+! ----------------------------------------------------------------------------
+
+!{{{ XTerm
+XTerm*cursorBlink: false
+XTerm*showBlinkAsBold: true
+XTerm*multiScroll: true
+XTerm*cursorColor: #73B8D9
+XTerm*colorMode: true
+XTerm*pointerColor: blue
+XTerm*pointerColor2: yellow
+XTerm*borderWidth: 0
+XTerm*scrollBar:    false
+XTerm*loginShell: true
+XTerm*eightBitInput: false
+XTerm*hideScrollbar: true
+XTerm*hideTabbar: true
+XTerm*hideButton: true
+XTerm*hideMenubar: true
+XTerm*dynamicColors: true
+XTerm*.showBlinkAsBold: true
+XTerm*.utf8: 1
+XTerm*.visualBell: false
+!XTerm*faceName: terminus:size=12:antialias=true
+XTerm*faceName: inconsolata for powerline:size=12:antialias=true
+XTerm*saveLines: 8192
+XTerm*on4Clicks: all
+XTerm*colorBDMode: true
+XTerm*on2Clicks:  regex [^ \n]+
+XTerm*on3Clicks: regex (ftp|http|https|mailto|news|nntp|telnet|file|aim):[A-Za-z0-9/](([A-Za-z0-9$_.+!*(),;/?:@&~=-])|%[A-Fa-f0-9]{2})+(#([a-zA-Z0-9][a-zA-Z0-9$_.+!*(),;/?:@&~=%-]*))?
+XTerm*on5Clicks:  line
+XTerm*cutNewline: true
+XTerm*metaSendsEscape: true
+XTerm*locale: utf8
+XTerm*jumpScroll: true
+XTerm*scrollTtyOutput: false
+XTerm*underLine: true
+XTerm*utf8Title: true
+XTerm*scrollKey: true
+XTerm*bellIsUrgent: true
+!}}}
+
+!{{{ URxvt
+URxvt*loginShell:       false
+URxvt*saveLines:        8192
+URxvt*geometry:         100x25
+URxvt*depth:        32
+URxvt*scrollstyle:   plain
+URxvt*scrollColor:  #444444
+URxvt*scrollTtyKeypress: true
+URxvt*scrollWithBuffer: true
+URxvt*metaSendsEscape:true
+URxvt*utf8: true
+URxvt*scrollTtyOutput:  false
+URxvt*inheritPixmap:    false
+URxvt*visualBell:       false
+URxvt*urgentOnBell:     true
+URxvt*perl-ext-common: default,matcher
+!URxvt.perl-ext-common: default,matcher,url-select,keyboard-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: firefox
+URxvt.url-select.underline: true
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.copyCommand:  xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+
+
+URxvt*urlLauncher: firefox
+URxvt*underlineURLs: true
+URxvt*matcher*button: 2
+URxvt*intesityStyles:   true
+URxvt*termName:         rxvt-unicode-256color
+URxvt*cutchars:@-./_~?&=%+#'"'()*,;<=>[]^{|}
+URxvt*secondaryScreen: false
+
+! emulate XTerm keycodes to support Vim
+URxvt*keysym*M-Up            : \033[1;3A
+URxvt*keysym*M-Down          : \033[1;3B
+URxvt*keysym*M-Right         : \033[1;3C
+URxvt*keysym*M-Left          : \033[1;3D
+URxvt*keysym*M-S-Up          : \033[1;4A
+URxvt*keysym*M-S-Down        : \033[1;4B
+URxvt*keysym*M-S-Right       : \033[1;4C
+URxvt*keysym*M-S-Left        : \033[1;4D
+URxvt*keysym*C-Up            : \033[1;5A
+URxvt*keysym*C-Down          : \033[1;5B
+URxvt*keysym*C-Right         : \033[1;5C
+URxvt*keysym*C-Left          : \033[1;5D
+URxvt*keysym*C-S-Up          : \033[1;6A
+URxvt*keysym*C-S-Down        : \033[1;6B
+URxvt*keysym*C-S-Right       : \033[1;6C
+URxvt*keysym*C-S-Left        : \033[1;6D
+URxvt*keysym*M-Page_Up       : \033[5;3~
+URxvt*keysym*M-Page_Down     : \033[6;3~
+URxvt*keysym*M-Home          : \033[1;3H
+URxvt*keysym*M-End           : \033[1;3F
+URxvt*keysym*M-S-Home        : \033[1;4H
+URxvt*keysym*M-S-End         : \033[1;4F
+URxvt*keysym*C-Page_Up       : \033[5;5~
+URxvt*keysym*C-Page_Down     : \033[6;5~
+URxvt*keysym*C-Home          : \033[1;5H
+URxvt*keysym*C-End           : \033[1;5F
+URxvt*keysym*C-S-Home        : \033[1;6H
+URxvt*keysym*C-S-End         : \033[1;6F
+
+!URxvt.keysym.C-Left: \033[1;5D
+!URxvt.keysym.C-Right: \033[1;5C
+!URxvt.keysym.C-Up: \033[1;5B
+!URxvt.keysym.C-Down: \033[1;5A
+!URxvt*termName: rxvt
+
+! appearance
+URxvt*transparent:        false
+URxvt*cursorBlink:        false
+URxvt*cursorOnTime:       400
+URxvt*cursorOffTime:      140
+URxvt*jumpScroll:         true
+URxvt*scrollBar:          false
+
+!URxvt*font: xft:dejavu sans mono for powerline:size=12:antialias=true
+!URxvt*font: xft:terminus ttf for powerline:antialias=true
+!URxvt*font: xft:droid sans mono slashed for powerline:size=12:antialias=true
+!URxvt*font: xft:monaco for powerline:size=10
+!URxvt*font: xft:inconsolata dz for powerline:size=12
+
+URxvt*font: xft:inconsolata for powerline:size=12:antialias=true
+!URxvt*font: xft:SourceCodePro-Semibold-Powerline:size=12:antialias=true
+
+!URxvt*font: xft:dejavu sans mono for powerline:size=10:antialias=true
+!URxvt*boldFont: xft:dejavu sans mono for powerline:size=10:antialias=true:bold
+!URxvt*italicFont: xft:dejavu sans mono for powerline:size=10:antialias=true:italic
+!URxvt*boldItalicFont: xft:dejavu sans mono for powerline:size=10:antialias=true:italic
+
+!URxvt*font: xft:droid sans mono slashed for powerline:size=10:antialias=true
+!URxvt*boldFont: xft:droid sans mono slashed for powerline:size=10:antialias=true:bold
+!URxvt*italicFont: xft:droid sans mono slashed for powerline:size=10:antialias=true:italic
+!URxvt*boldItalicFont: xft:droid sans mono slashed for powerline:size=10:antialias=true:italic
+
+!URxvt*font: xft:terminus:size=12:antialias=true
+!URxvt*boldFont: xft:terminus:size=12:antialias=true:bold
+!URxvt*italicFont: xft:terminus:size=12:antialias=true:italic
+!URxvt*boldItalicFont: xft:terminus:size=12:antialias=true:italic
+!}}}
+
+!{{{ colors
+!*background: #202020
+!*background: #2e2e2e
+!*foreground: #ffffff
+!*cursorColor: #07A5FF
+
+#include "/home/gregf/.xcolors/solarized.xcolors"
+!*color0:             #242424
+!*color8:             #828282
+!! red
+!*color1:             #BF7979
+!*color9:             #F4A45F
+!! green
+!*color2:             #97B26B
+!*color10:            #C5F779
+!! yellow
+!*color3:             #cdcda1
+!*color11:            #ffffaf
+!! blue
+!*color4:             #285A8B
+!*color12:            #98afd9
+!! magenta
+!*color5:             #d9b798
+!*color13:            #d7d998
+!! cyan
+!*color6:             #a1b5cd
+!*color14:            #a1b5cd
+!! white
+!*color7:             #ffffff
+!*color15:            #dedede
+
+!}}}
+
+!{{{ Font handling
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.lcdfilter:  lcddefault
+Xft.hinstyle: hintslight
+! }}}
+
+!{{{ Cursor
+Xcursor.theme: PolarCursorTheme
+Xcursor.size: 16
+! }}}
+
+!{{{ I hear bells
+!   -- also: set 'vbell on' in screen
+!   --       set 'bell_msg' "\a in window!"
+irssi*urgentOnBell: true
+weechat*urgentOnBell: true
+
+!}}}

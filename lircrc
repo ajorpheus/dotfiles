@@ -1,0 +1,77 @@
+##mplayer
+begin
+    button = KEY_PLAY
+    prog = mplayer
+    config = play
+end
+begin
+    button = KEY_PAUSE
+    prog = mplayer
+    config = pause
+end
+begin
+    button = KEY_FASTFORWARD
+    prog = mplayer
+    config = seek +10
+    repeat = 1
+end
+begin
+    button = KEY_REWIND
+    prog = mplayer
+    config = seek -10
+    repeat = 1
+end
+begin
+    button = KEY_VOLUMEUP
+    prog = mplayer
+    config = volume +10
+    repeat = 1
+end
+begin
+    button = KEY_VOLUMEDOWN
+    prog = mplayer
+    config = volume -10
+    repeat = 1
+end
+begin
+    button = KEY_POWER
+    prog = mplayer
+    config = quit
+end
+begin
+    button = KEY_MUTE
+    prog = mplayer
+    config = mute
+end
+begin
+    button = KEY_CHANNELUP
+    prog = mplayer
+    config = pt_step 1
+end
+begin
+    button = KEY_CHANNELDOWN
+    prog = mplayer
+    config = pt_step -1
+end
+begin
+    button = KEY_DISPLAYTOGGLE
+    prog = mplayer
+    config = vo_fullscreen
+end
+begin
+    button = KEY_MENU
+    prog = mplayer
+    config = osd
+end
+begin
+    button = KEY_SUBTITLE
+    prog = mplayer
+    config = sub_visibility
+end
+
+
+#begin
+  #button = KEY_RECORD
+  #prog = irexec
+  #config = gmpc
+#end

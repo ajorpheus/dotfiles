@@ -1,0 +1,23 @@
+set show_inputbar false
+set scroll_wrap false
+
+# key bindings
+map <PageUp> scroll full_up
+map <PageDown> scroll full_down
+map <BackSpace> scroll full_up all
+map <M-v> scroll full_up
+map <C-v> scroll full_down
+
+map + zoom in
+map - zoom out
+
+map w adjust_window width
+map z adjust_window bestfit
+map <M-f> toggle_fullscreen 0 all
+
+map <C-p> print
+
+map q quit
+map <C-g> abort
+
+

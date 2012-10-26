@@ -1,0 +1,14 @@
+text/html; lynx -dump '%s'; copiousoutput; description=HTML Text; nametemplate=%s.html
+text/html; w3m -I %{charset} -dump %s; nametemplate=%s.html; copiousoutput
+text/html; elinks -force-html -dump '%s'; copiousoutput; description=HTML Text; nametemplate=%s.html
+text/html; links -dump '%s'; copiousoutput; description=HTML Text; nametemplate=%s.html
+application/pgp-keys; gpg --import --interactive --verbose; needsterminal
+application/pdf; zathura %s; test=test -n "$DISPLAY";
+application/pdf; pdftotext %s;
+image/*; sxiv %s; test=test -n "$DISPLAY";
+application/ms-tnef; tnef -t %s && read ans;
+application/msword; abiword %s; test=test -n "$DISPLAY";
+application/msword; antiword %s | less;
+text/richtext ; catdoc %s ; copiousoutput
+text/*; less '%s'
+video/*; mplayer '%s'; needsterminal; test=test -n "$DISPLAY";

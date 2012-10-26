@@ -1,0 +1,1 @@
+../rbnotify-weechat.rb

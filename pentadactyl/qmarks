@@ -1,0 +1,18 @@
+""" Websites
+"" Reddit
+qma r http://www.reddit.com
+qma p http://reddpics.com/
+"" LastFM
+qma f http://www.last.fm/user/netzdamon
+"" Github
+qma g http://github.com/
+"" Google Voice
+qma v http://www.google.com/voice
+"" ShareTV
+qma s http://sharetv.org/user/gregf
+"" Gmail
+qma m https://mail.google.com/mail/
+"" Dev
+qma d http://0.0.0.0:3000/
+
+" vim: ft=vimperator :

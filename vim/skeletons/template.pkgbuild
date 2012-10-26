@@ -1,0 +1,16 @@
+#contributor: Greg Fitzgerald <greg@gregf.org>
+pkgname=
+pkgver=
+pkgrel=1
+pkgdesc=
+arch=('i686' 'x86_64')
+url=
+license=('GPL2')
+depends=('gcc')
+makedepends=('pkgconfig')
+source=("")
+md5sums=('')
+
+build() {
+    cd "${srcdir}/src"
+}
